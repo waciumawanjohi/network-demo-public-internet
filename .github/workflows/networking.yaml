@@ -1,9 +1,6 @@
-name: Test catalog changes
+name: Test network connectivity
 
 on:
-  pull_request:
-    types:
-      [opened, reopened, synchronize, labeled]
   workflow_dispatch:
 
 jobs:
