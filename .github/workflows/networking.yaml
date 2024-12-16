@@ -23,6 +23,6 @@ jobs:
           nc -zv 108.162.192.0 443 # gitlab.com
 
           echo "Other IP addresses fail:"
-          nc -zv 13.107.6.0 443 # azure
-          nc -zv 103.31.4.0 443 # gitlab.com
-          nc -zv 192.30.252.0 443 # github.com
+          nc -zv 13.107.6.0 443 || true # azure
+          nc -zv 103.31.4.0 443 || true # gitlab.com
+          nc -zv 192.30.252.0 443 || true # github.com
